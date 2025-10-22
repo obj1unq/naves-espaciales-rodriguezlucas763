@@ -134,6 +134,9 @@ describe "Extendiendo el dominio" {
   test "Encontrar enemigo" {
 	
 	const naveConPasajeros = new NaveDePasajeros()
-	
+
+	naveConPasajeros.encontrarEnemigo()
+	assert.equals(20000, naveConPasajeros.velocidad())
+	assert.that(naveConPasajeros.alarma())
   }
 }
